@@ -1,6 +1,6 @@
 # Starwars
 
-A brief description of your project, its purpose, and key features.
+Access deployed version here: https://starwars-iota-gilt.vercel.app
 
 ## Table of Contents
 
@@ -22,4 +22,4 @@ A brief description of your project, its purpose, and key features.
    cd frontend
    npm install
    npm run dev
-   
+
