@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './scrollbar.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,4 +31,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.animate-bounce {
+  animation: bounce 1s ease;
 }

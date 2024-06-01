@@ -16,6 +16,7 @@ const config: Config = {
         "block1": "url('/images/block1.png')",
         "block2": "url('/images/block-film.png')",
         "block3": "url('/images/block-character.png')",
+        "block4": "url('/images/block-planet.png')",
       },
       colors: {
         'neon-pink': '#ff007f',
@@ -23,6 +24,8 @@ const config: Config = {
         'neon-purple': '#bf00ff',
         'futuristics-800': '#1a1a1a',
         'black60': 'rgba(0, 0, 0, 0.6)',
+        'black-bg': '#141414',
+        'black-bg-search': '#0D0D0D',
       },
       fontFamily: {
          lexend: ['Lexend', 'sans'],

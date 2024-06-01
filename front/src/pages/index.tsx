@@ -5,6 +5,9 @@ import BaseCard from '../components/BaseCard'; // Assuming you will use it to di
 import Intro from '../components/Intro';
 import Films from '@/components/Films';
 import Character from '@/components/Character';
+import People from '@/components/People';
+import Footer from '@/components/Footer';
+import Planets from '@/components/Planets';
 
 const Index = () => {
   const [planets, setPlanets] = useState<Planet[]>([]);
@@ -33,8 +36,15 @@ const Index = () => {
   return (
     <div className="flex flex-col">
       <Intro />
-      <Films />
+      <div id="FILMS">
+      <Films/>
+      </div>
       <Character/>
+      <div id="CHARACTER">
+      <People/>
+      </div>
+      <Planets/>
+      <Footer/>
     </div>
   );
 };
