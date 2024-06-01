@@ -4,29 +4,20 @@ import React from 'react'; // Adjust the path if necessary
 
 const films = [
     'A New Hope',
-    'The Empire Strikes Back',
     'Return of the Jedi',
-    'The Phantom Menace',
-    'Attack of the Clones',
-    'Revenge of the Sith'
+    'The Last Jedi',
 ];
 
 const starships = [
     'CR90 corvette',
     'Star Destroyer',
-    'Sentinel-class landing craft',
     'Death Star',
-    'Millennium Falcon',
-    'Y-wing',
 ];
 
 const vehicles = [
     'Sand Crawler',
     'T-16 skyhopper',
     'X-34 landspeeder',
-    'TIE/LN starfighter',
-    'Snowspeeder',
-    'TIE bomber',
 ];
 
 const properties = [
@@ -53,7 +44,7 @@ const CharacterBlock = () => {
       </div>
 
       {/* Information block */}
-      <div className="absolute right-0 top-20 bottom-0 w-full md:w-1/2 flex flex-col bg-black bg-opacity-85 p-8 h-full backdrop-blur-sm rounded-xl sm:p-8 md:pl-36 md:pr-8 lg:pr-16 lg:pl-52 text-sm md:text-base lg:text-lg gap-8 items-end overflow-auto">
+      <div className="absolute right-0 top-0 bottom-0 mt-20 w-full md:w-1/2 flex flex-col bg-black bg-opacity-85 p-8 backdrop-blur-sm rounded-lg sm:p-8 md:pl-36 md:pr-8 lg:pr-16 lg:pl-52 text-sm md:text-base lg:text-lg gap-8 items-end overflow-auto">
         <div className="flex flex-row gap-4 gap-8">
           {properties.map((property, index) => (
             <div key={index} className="flex flex-col gap-2 md:gap-4">
@@ -72,27 +63,27 @@ const CharacterBlock = () => {
           ))}
         </div>
 
-        <div className="lg:flex lg:flex-col gap-2 items-end text-sm">
+        <div className="lg:flex lg:flex-col gap-2 items-end text-gray-200 lg:mt-12">
           <div className="text-gray-300">Films:</div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2 font-bold">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2">
             {films.map((film, index) => (
               <span key={index} className="text-right">{film}</span>
             ))}
           </div>
         </div>
 
-        <div className="lg:flex lg:flex-col gap-2 items-end text-sm">
+        <div className="lg:flex lg:flex-col gap-2 items-end text-gray-200">
           <div className="text-gray-300">Starships:</div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2 font-bold">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2">
             {starships.map((film, index) => (
               <span key={index} className="text-right">{film}</span>
             ))}
           </div>
         </div>
 
-        <div className="lg:flex lg:flex-col gap-2 items-end text-sm">
+        <div className="lg:flex lg:flex-col gap-2 items-end text-gray-200">
           <div className="text-gray-300">Vehicles:</div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2 font-bold">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-2">
             {vehicles.map((film, index) => (
               <span key={index} className="text-right">{film}</span>
             ))}
