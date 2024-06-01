@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5555',
+  baseURL: 'https://backend-starwars-681354bab4e9.herokuapp.com',
   headers: {
     'Content-Type': 'application/json',
   },
