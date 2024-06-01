@@ -3,7 +3,6 @@ import {useState, useEffect} from 'react'
 import axiosInstance from '../utils/axiosInstance'
 import {Film} from '../types'
 import FilmCarousel from './FilmCarousel'
-import DraggableCarousel from './DraggableCarousel'
 
 const Films = () => {
   const [films, setFilms] = useState<Film[]>([])

@@ -56,7 +56,7 @@ const FilmCarousel: React.FC<FilmCarouselProps> = ({ films, initialSlideIndex = 
         {films.map((film) => (
           <SwiperSlide key={film._id}>
             <div className="flex flex-col md:flex-row bg-black60 rounded-lg shadow-lg p-4 md:p-8 gap-4 md:gap-8 items-center mb-6">
-              <Image src={film.image || "/images/film-element.png"} alt={film.title} width={200} height={300} className="rounded-md" />
+              <Image src="/images/film-element.png" alt={film.title} width={200} height={300} className="rounded-md" />
               <div className="text-center md:text-left">
                 <span className='text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white font-semibold'>{film.title}</span>
               </div>
