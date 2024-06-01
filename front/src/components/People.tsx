@@ -58,7 +58,7 @@ const People: React.FC = () => {
 
   return (
     <div className="bg-black-bg h-screen px-24 py-8 flex flex-col gap-4">
-      <div className="text-3xl font-bold p-8 mb-8 flex justify-center items-center text-gray-300">Characters</div>
+      <div className="text-3xl font-bold mb-8 flex justify-center items-center text-gray-300">Characters</div>
       {error && <p className="text-red-500">{error}</p>}
       <div className="mb-4">
         <input

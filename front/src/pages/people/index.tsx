@@ -3,7 +3,7 @@ import CharacterCard from '@/components/CharacterCard'
 import axiosInstance from '@/utils/axiosInstance'
 import {Person} from '@/types'
 
-const index = () => {
+const Index = () => {
     const [people, setPeople] = useState<Person[]>([])
     const [loading, setLoading] = useState(true)
 
@@ -24,7 +24,7 @@ const index = () => {
     }, [])
 
   return (
-    <div className='grid lg:grid-cols-4 md:grid-cols-3 sm-grid-cols-2'>
+    <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'>
     {
             people.map((person) => (
                 <CharacterCard key={person._id} character={person} />
@@ -35,4 +35,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
